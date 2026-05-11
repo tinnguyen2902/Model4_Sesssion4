@@ -1,4 +1,4 @@
-package com.example.ls4_1_author.Model;
+package com.example.ls4_1_author.Model.Entity;
 
 import jakarta.persistence.*;
 
