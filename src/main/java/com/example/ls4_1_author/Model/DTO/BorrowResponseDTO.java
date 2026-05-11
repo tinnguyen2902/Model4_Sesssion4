@@ -1,27 +1,29 @@
 package com.example.ls4_1_author.Model.DTO;
 
+import java.time.LocalDate;
+
 public class BorrowResponseDTO {
-    private String strudentId;
+    private String strudentName;
     private String bookTitle;
     public String authorName;
-    private String borrowDate;
+    private LocalDate borrowDate;
 
     public BorrowResponseDTO() {
     }
 
-    public BorrowResponseDTO(String strudentId, String bookTitle, String authorName, String borrowDate) {
-        this.strudentId = strudentId;
+    public BorrowResponseDTO(String strudentName, String bookTitle, String authorName,LocalDate borrowDate) {
+        this.strudentName = strudentName;
         this.bookTitle = bookTitle;
         this.authorName = authorName;
         this.borrowDate = borrowDate;
     }
 
-    public String getStrudentId() {
-        return strudentId;
+    public String getStrudentName() {
+        return strudentName;
     }
 
-    public void setStrudentId(String strudentId) {
-        this.strudentId = strudentId;
+    public void setStrudentName(String strudentName) {
+        this.strudentName = strudentName;
     }
 
     public String getBookTitle() {
@@ -40,11 +42,11 @@ public class BorrowResponseDTO {
         this.authorName = authorName;
     }
 
-    public String getBorrowDate() {
+    public LocalDate getBorrowDate() {
         return borrowDate;
     }
 
-    public void setBorrowDate(String borrowDate) {
+    public void setBorrowDate(LocalDate borrowDate) {
         this.borrowDate = borrowDate;
     }
 }
